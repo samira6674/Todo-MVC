@@ -1,0 +1,136 @@
+::placeholder{
+    color: #023047;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "popins" , sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+    background: linear-gradient(to right,#8ecae6, #219ebc, #023047);
+    color: white;
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    height: 3rem;
+    width: 25rem;
+    outline: none;
+    font-size: 1rem;
+    color: #023047;
+    border:1px solid #219ebc;
+    padding: 1rem;
+}
+form button{
+    font-size: 1rem;
+    height: 3rem;
+    width: 6rem;
+    margin-left: 0.5rem;
+    background: linear-gradient(to right,#8ecae6, #219ebc, #023047);
+    color: white;
+    border: none;
+}
+
+form button:hover{
+    cursor: pointer;
+    color: #219ebc;
+    background: white;
+    border: 1px solid #219ebc;
+}
+
+.bod-todo{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.todo-container{
+    width: 85%;
+    display: flex;
+    
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+    display: flow-root;
+    margin-left: 20rem;
+    margin-top: 1.5rem;
+}
+
+.todo{
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background: white;
+    color: #023047;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #219ebc;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn, .complete-btn, .edit-btn{
+    background-color: white;
+    color: #024364;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.fa-trash, .fa-check, .fa-edit{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #219ebc;
+}
+
+.fall{
+    transform: translateY(1rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.filter-todo{
+    color: white;
+    width: 15%;
+    height: 100%;
+    padding: 1rem;
+}
+
+option{
+    display: flex;
+    background: linear-gradient(to left,#8ecae6, #219ebc, #023047);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+option:hover{
+    cursor: pointer;
+    color: #219ebc;
+    background: white;
+    border: 1px solid #8ecae6;
+}
+
